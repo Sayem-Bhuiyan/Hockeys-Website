@@ -28,6 +28,7 @@
                 'btn-primary': '#FF4240',
                 'header-primary': '#131318',
                 'ancor': '#424247',
+                'header-description': 'rgba(255, 255, 255, 0.60)',
               }
             }
           }
@@ -53,7 +54,8 @@
 <body>
     <!-- header -->
     <header class="container lg:w-[1200px] mx-auto">
-        <nav class="my-10">
+        <!-- Navbar -->
+        <nav class="my-6 lg:my-10">
             <div class="navbar">
                 <div class="navbar-start items-center">
                   <div class="dropdown">
@@ -85,6 +87,53 @@
                 </div>
               </div>
         </nav>
+
+        <!-- Banner Slider -->
+        <div class="w-11/12 lg:w-full mx-auto mb-10 lg:mb-24 relative">
+
+            <div class=" carousel h-[200px] lg:h-[550px] w-full mb-4">
+                <div id="slide1" class="carousel-item relative w-full">
+                    <img src="Images/1.png" class="w-full rounded-xl lg:rounded-2xl" />
+                    <div class="absolute flex justify-start gap-4 lg:gap-8 transform -translate-y-1/2 left-1/3 lg:left-5 right-5 -bottom-2 lg:bottom-3">
+                      <a href="#slide4" class="btn btn-circle bg-black text-white">❮</a> 
+                      <a href="#slide2" class="btn btn-circle bg-black text-white">❯</a>
+                    </div>
+                </div> 
+                
+                <div id="slide2" class="carousel-item relative w-full">
+                  <img src="Images/banner2.jpg" class="w-full rounded-xl lg:rounded-2xl" />
+                  <div class="absolute flex justify-start gap-4 lg:gap-8 transform -translate-y-1/2 left-1/3 lg:left-5 right-5 -bottom-2 lg:bottom-3">
+                    <a href="#slide1" class="btn btn-circle bg-black text-white">❮</a> 
+                    <a href="#slide3" class="btn btn-circle bg-black text-white">❯</a>
+                  </div>
+                </div> 
+                <div id="slide3" class="carousel-item relative w-full">
+                  <img src="Images/banner3.webp" class="w-full rounded-xl lg:rounded-2xl" />
+                  <div class="absolute flex justify-start gap-4 lg:gap-8 transform -translate-y-1/2 left-1/3 lg:left-5 right-5 -bottom-2 lg:bottom-3">
+                    <a href="#slide2" class="btn btn-circle bg-black text-white">❮</a> 
+                    <a href="#slide4" class="btn btn-circle bg-black text-white">❯</a>
+                  </div>
+                </div> 
+                <div id="slide4" class="carousel-item relative w-full">
+                  <img src="Images/banner4.jfif" class="w-full rounded-xl lg:rounded-2xl" />
+                  <div class="absolute flex justify-start gap-4 lg:gap-8 transform -translate-y-1/2 left-1/3 lg:left-5 right-5 -bottom-2 lg:bottom-3">
+                    <a href="#slide3" class="btn btn-circle bg-black text-white">❮</a> 
+                    <a href="#slide1" class="btn btn-circle bg-black text-white">❯</a>
+                  </div>
+                </div> 
+                
+              </div>
+              <!-- Banner Badge -->
+              <div class="lg:absolute lg:bottom-8 lg:right-8 bg-black rounded-xl p-4 lg:p-8 block lg:w-[550px]">
+                <h2 class="text-white text-lg lg:text-2xl font-extrabold mb-2 lg:mb-4">
+                    Meet all the heroes from the field
+                </h2>
+                <p class="text-header-description text-sm lg:text-base font-medium leading-6" >
+                    Let's take a journey to meet some of these heroes, each contributing their unique talents to make the world a better place.
+                </p>
+              </div>
+        </div>
+        
     </header>
 </body>
 
