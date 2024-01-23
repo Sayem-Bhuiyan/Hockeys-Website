@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- DaisyUI and tailwind link -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Manrope Google fonts link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- font-awesome kit link -->
+    <script src="https://kit.fontawesome.com/f6e4edba18.js" crossorigin="anonymous"></script>
+
+    <title>Sposts Club</title>
+
+    <!-- Custom Tailwind styles -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'btn-primary': '#FF4240',
+                'header-primary': '#131318',
+                'ancor': '#424247',
+              }
+            }
+          }
+        }
+    </script>
+
+    <!-- styles -->
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- header -->
+    <header class="container lg:w-[1200px] mx-auto">
+        <nav class="my-10">
+            <div class="navbar">
+                <div class="navbar-start items-center">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="#131318"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow rounded-box w-52">
+                        <li class="text-ancor text-base font-bold hover:text-btn-primary"><a>Home</a></li>
+                        <li class="text-ancor text-base font-bold hover:text-btn-primary"><a>About</a></li>
+                        <li class="text-ancor text-base font-bold hover:text-btn-primary"><a>Pages</a></li>
+                        <li class="text-ancor text-base font-bold hover:text-btn-primary"><a>Blog</a></li>
+                        <li class="text-ancor text-base font-bold hover:text-btn-primary"><a>Contact</a></li>
+                    </ul>
+                  </div>
+                  <a class="text-header-primary text-2xl lg:text-4xl font-extrabold">Hockey<span class="text-btn-primary">'</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li class="text-ancor text-base font-bold hover:text-btn-primary"><a>Home</a></li>
+                    <li class="text-ancor text-base font-bold hover:text-btn-primary"><a>About</a></li>
+                    <li class="text-ancor text-base font-bold hover:text-btn-primary"><a>Pages</a></li>
+                    <li class="text-ancor text-base font-bold hover:text-btn-primary"><a>Blog</a></li>
+                    <li class="text-ancor text-base font-bold hover:text-btn-primary"><a>Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end space-x-6">
+                    <i class="fa-solid fa-magnifying-glass hidden md:block"></i>
+                  <button class="btn bg-btn-primary text-white text-lg lg:text-xl font-bold px-4 lg:px-6">Get Ticket</button>
+                </div>
+              </div>
+        </nav>
+    </header>
+</body>
+
+</html>
